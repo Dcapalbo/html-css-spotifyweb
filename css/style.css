@@ -437,6 +437,7 @@ li:hover .libreria_a {
 }
 
 .film_cover {
+  position: relative;
   justify-content: center;
   width: calc(100% / 6);
   flex-shrink: 0;
@@ -444,8 +445,49 @@ li:hover .libreria_a {
 }
 
 .film_cover img {
+  position: relative;
   width: 100%;
 }
+
+.film_cover p {
+  margin: 0px;
+}
+/* overlay */
+
+.film_cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+
+.film_cover:hover .overlay {
+  background-color: #000;
+  opacity: 0.7;
+  transition: 1.5s;
+  display: block;
+}
+
+.fa-play-circle {
+  font-size: 60px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.film_cover:hover .fa-play-circle {
+  color: #fff;
+  opacity: 0.7;
+  transition: 1.5s;
+  display: block;
+}
+
+/* overlay */
 
 .playlist_John_Doe h3,p {
   margin-left: 30px;
