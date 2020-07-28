@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.display_inline_block {
+  display: inline-block;;
+}
+
 .float-right {
   float: right;
 }
@@ -197,14 +201,24 @@
   padding: 10px 20px;
 }
 
-/* fine header */
-/* inizio main */
-
-aside .logo {
-  width: 150px;
-  margin-top: 12px;
+.logo_hidden {
+  font-size: 20px;
+  color: #fff;
 }
 
+/* fine header */
+/* inizio main */
+/* logo */
+aside .logo {
+  width: 180px;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* logo */
+
+/* menu */
+/* first_menu */
 .menu_list {
   list-style: none;
   display: block;
@@ -212,26 +226,65 @@ aside .logo {
   font-size: 15px;
 }
 
-.fa-home {
-  font-size: 30px;
-  color: #fff;
-  padding-left: 20px;
+aside ul .logo {
+  width: 60px;
   padding-right: 20px;
+  margin: 0px;
+  margin-left: 20px;
+  padding-top: 10px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.first_side_menu a {
+  position: absolute;
+  margin-top: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #A9A9A9;
+  text-transform: capitalize;
+}
+
+.first_side_menu ul {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 0px;
   padding-top: 10px;
 }
 
-.fa-search {
-  font-size: 30px;
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+/* end first menu */
+
+/* second menu */
+.square_grey {
+  position: relative;
+  width: 30%;
+  height: 5%;
+  background-color: #A9A9A9;
 }
 
-.fa-bars {
-  font-size: 30px;
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+.fa-plus {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
+
+.second_side_menu h2 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.second_side_menu {
+  margin-left: 20px;
+  padding-top: 30px;
+}
+.second_side_menu li {
+  color: #A9A9A9;
+  line-height: 30px;
+}
+
+.second_side_menu p {
+  color: #A9A9A9;
+}
+/* end menu */
