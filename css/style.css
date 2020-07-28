@@ -14,6 +14,10 @@
   display: inline-block;;
 }
 
+.display_inline {
+  display: inline;
+}
+
 .float-right {
   float: right;
 }
@@ -122,6 +126,11 @@
   margin-left: 50px;
 }
 
+.margin_left20 {
+  margin-left: 20px;
+}
+
+
 .margin_right {
   margin-right: 50px;
 }
@@ -207,20 +216,25 @@
 }
 
 /* fine header */
-/* inizio main */
+
+/* inizio aside */
+
 /* logo */
+
 aside .logo {
   width: 180px;
   margin-top: 12px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 /* logo */
 
 /* menu */
+
 /* first_menu */
+
 .menu_list {
-  list-style: none;
+  list-style:none;
   display: block;
   color: #fff;
   font-size: 15px;
@@ -230,10 +244,42 @@ aside ul .logo {
   width: 60px;
   padding-right: 20px;
   margin: 0px;
-  margin-left: 20px;
   padding-top: 10px;
   color: #fff;
   opacity: 0.5;
+}
+
+li:hover .home_logo {
+  color: #fff;
+  opacity: 1.0;
+  border-left: 3px solid yellow;
+}
+
+li:hover .search_logo {
+  color: #fff;
+  opacity: 1.0;
+  border-left: 3px solid yellow;
+}
+
+li:hover .libreria_logo {
+  color: #fff;
+  opacity: 1.0;
+  border-left: 3px solid yellow;
+}
+
+li:hover .home_a {
+  color: #fff;
+  opacity: 1.0;
+}
+
+li:hover .search_a {
+  color: #fff;
+  opacity: 1.0;
+}
+
+li:hover .libreria_a {
+  color: #fff;
+  opacity: 1.0;
 }
 
 .first_side_menu a {
@@ -241,7 +287,8 @@ aside ul .logo {
   margin-top: 20px;
   font-size: 15px;
   text-decoration: none;
-  color: #A9A9A9;
+  color: #fff;
+  opacity: 0.5;
   text-transform: capitalize;
 }
 
@@ -258,16 +305,17 @@ aside ul .logo {
 .square_grey {
   position: relative;
   width: 30%;
-  height: 5%;
+  height: 60px;
   background-color: #A9A9A9;
+  margin-bottom: 20px;
 }
 
 .fa-plus {
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  font-size: 30px;
 }
 
 .second_side_menu h2 {
@@ -276,15 +324,74 @@ aside ul .logo {
 }
 
 .second_side_menu {
-  margin-left: 20px;
   padding-top: 30px;
 }
 .second_side_menu li {
-  color: #A9A9A9;
+  color: #fff;
   line-height: 30px;
+  opacity: 0.5;
 }
 
-.second_side_menu p {
-  color: #A9A9A9;
+.second_side_menu span {
+  position: absolute;
+  margin-top: 20px;
+  color: #fff;
+  padding-left: 15px;
+  font-size: 15px;
+  opacity: 0.5;
 }
 /* end menu */
+
+/* download and profile */
+
+.Download_app {
+  margin-top: 250px;
+  border-bottom: 1px solid #A9A9A9;
+}
+
+.Download_app img {
+  width: 35px;
+  opacity: 0.5;
+  padding-right: 10px;
+}
+
+.Profile .fa-user-circle{
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.Profile span {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* end navbar */
+
+/* end aside */
+
+/* start main */
+
+/* service list */
+.Service_list {
+  justify-content: center;
+}
+
+.menu_service_list {
+  margin-top: 150px;
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.menu_service_list li {
+  color: #fff;
+  opacity: 0.5;
+  display: inline;
+  padding-right: 30px;
+
+}
+
+.Products img {
+  width: calc(100% /6);
+
+}
