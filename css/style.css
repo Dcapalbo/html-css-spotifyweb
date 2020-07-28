@@ -411,8 +411,10 @@ li:hover a{
 
 .film_cover {
   width: calc(100% / 6);
+  flex-shrink: 1;
 }
 
 .film_cover img {
   width: 100%;
+  flex-shrink: 1;
 }
