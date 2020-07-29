@@ -519,8 +519,8 @@ li:hover .libreria_a {
   padding: 20px;
 }
 
-.left_footer {
-  justify-content: flex-start;
+.container_flex {
+  justify-content: center;
 }
 
 .text_left_footer li {
@@ -569,14 +569,6 @@ footer, .player, .icons {
   color: #fff;
 }
 
-.central_footer {
-  justify-content: center;
-}
-
-
-.right_footer {
-  justify-content: flex-end;
-}
 .right_footer .menu_list li {
   list-style: none;
   display: inline;
