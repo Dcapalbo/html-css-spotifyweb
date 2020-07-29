@@ -138,6 +138,10 @@
   margin-right: 50px;
 }
 
+.margin_right20 {
+  margin-right: 20px;
+}
+
 .margin_top10 {
   margin-top: 10px;
 }
@@ -171,7 +175,7 @@
   overflow-x: hidden;
   display: flex;
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(100% - 100px);
   background-color: #141922;
  }
 
@@ -189,7 +193,7 @@
   height: calc(100vh - 100px);
   width: 300px;
   background-color:#000;
-  overflow-y: hidden;
+  overflow-y: auto;
  }
 
  p {
@@ -262,6 +266,13 @@ aside .logo {
 /* menu */
 
 /* first_menu */
+
+.logo_nascosto{
+  color: red;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 50%;
+}
 
 .menu_list {
   list-style:none;
@@ -357,6 +368,7 @@ li:hover .libreria_a {
 
 .second_side_menu {
   padding-top: 30px;
+  overflow-y: auto;
 }
 .second_side_menu li {
   color: #fff;
@@ -455,6 +467,7 @@ li:hover .libreria_a {
 .film_cover {
   position: relative;
   justify-content: center;
+  flex-wrap: wrap;
   width: calc(100% / 6);
   flex-shrink: 0;
   padding: 20px;
@@ -473,8 +486,8 @@ li:hover .libreria_a {
     position: absolute;
     top: 5%;
     left: 7%;
-    width: 245px;
-    height: 245px;
+    width: 86%;
+    height: 60%;
     display: none;
     color: #fff;
 }
@@ -497,7 +510,7 @@ li:hover .libreria_a {
 
 /* overlay */
 
-.playlist_John_Doe h3,p {
+.playlist_Capalbo_Domenico h3,p {
   margin-left: 30px;
 }
 
@@ -521,8 +534,6 @@ li:hover .libreria_a {
 /* termine main */
 
 /* inizio footer */
-
-
 
 .container_flex {
   align-items: center;
@@ -620,7 +631,6 @@ margin: 0;
   color: #fff;
 }
 
-
 /* right footer */
 
 .right_footer {
@@ -647,3 +657,64 @@ margin: 0;
 }
 
 /* media  query */
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+
+  aside .logo {
+    display: none
+}
+
+  aside a {
+    display: none;
+}
+
+ aside span {
+   display: none;
+ }
+
+ aside .profile_download_hidden img{
+   width: 40px;
+ }
+
+ aside .profile_download_hidden i{
+   font-size: 30px;
+ }
+
+  aside {
+    width: 100px;
+}
+
+ .header_top {
+   width: calc(100% - 100px);
+ }
+
+ main .menu_service_list {
+   flex-wrap: wrap;
+ }
+
+ .central_main {
+   height: calc(100vh - 100px);
+   width: calc(100% - 100px);
+ }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  main .menu_service_list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+
+
+  main .menu_service_list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width:768px) {
+
+  main .menu_service_list {
+    flex-wrap: wrap;
+  }
+}

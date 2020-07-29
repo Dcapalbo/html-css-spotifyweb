@@ -16,7 +16,7 @@
    <header>
     <div class="header_top">
      <div class="row no_gutter_margin">
-      <div class="col-xs-3 float-right">
+      <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 float-right text-align-right">
        <!-- button header -->
        <button class="btn text-align-right" type="button" name="button">Effettua l'upgrade</button>
        <!-- button header -->
@@ -30,7 +30,7 @@
     <!-- inizio aside -->
     <aside>
      <img class="logo" src="img/logo.svg" alt="Logo Spotify">
-     <img class="logo_hidden hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
+     <img class="logo_nascosto hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
       <div class="first_side_menu">
         <ul class="menu_list no_gutter_margin no_gutter_padding">
          <li><img class="logo home_logo" src="img/home.svg" alt=""><a class="home_a"  href="#">home</a></li>
@@ -38,13 +38,13 @@
          <li><img class="logo libreria_logo" src="img/libreria.svg" alt="libreria"><a class="libreria_a" href="#">libreria</a></li>
         </ul>
        </div>
-       <div class="second_side_menu margin_left20">
+       <div class="second_side_menu margin_left20 hidden-xs">
         <h2>Playlist</h2>
-        <div class="square_grey display_inline_block">
+        <div class="square_grey display_inline_block hidden-xs">
          <i class="fas fa-plus"></i>
         </div>
-        <span class="no_gutter_margin">Crea Playlist</span>
-        <ul class="menu_list no_gutter_margin no_gutter_padding">
+        <span class="no_gutter_margin hidden-xs">Crea Playlist</span>
+        <ul class="menu_list no_gutter_margin no_gutter_padding hidden-xs">
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
@@ -54,13 +54,17 @@
           <li>Nome Playlist</li>
         </ul>
        </div>
-       <div class="download_app text-align-left padding_bottom10 margin_left20">
-        <img src="img/download.svg" alt="download">
-        <span>Installa app</span>
+       <div class="download_app text-align-left padding_bottom10 margin_left20 margin_right20 hidden-xs">
+        <img class="hidden-xs" src="img/download.svg" alt="download">
+        <span class="hidden-xs">Installa app</span>
        </div>
-       <div class="profile text-align-left padding_top10 margin_left20">
+       <div class="profile text-align-left padding_top10 margin_left20 hidden-xs">
         <i class="far fa-user-circle"></i>
-        <span>John Dee</span>
+        <span class="hidden-xs">Domenico Capalbo</span>
+       </div>
+       <div class="profile_download_hidden visible-xs">
+        <img src="img/download.svg" alt="download">
+        <i class="far fa-user-circle text-align-center"></i>
        </div>
     </aside>
     <!-- fine aside -->
@@ -131,8 +135,8 @@
      <!-- end film cover -->
      <!-- playlists -->
      <div class="row">
-      <div class="playlist_John_Doe">
-       <h3 class="margin_top">Creato per John Doe</h3>
+      <div class="playlist_Capalbo_Domenico">
+       <h3 class="margin_top">Creato per Domenico Capalbo</h3>
        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
       <div class="mix float-left text-align-center">
        <img src="img/radar.jpeg" alt="radar">
@@ -146,10 +150,10 @@
      </div>
      <!-- end playlists -->
      <!-- popolar artists -->
-     <div class="row">
+     <div class="row margin_bottom">
       <div class="popolar_artist">
-        <h3 class="margin_top">Artisti più popolari</h3>
-        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+       <h3 class="margin_top">Artisti più popolari</h3>
+       <p>Più ascolti, più accurati saranno i suggerimenti.</p>
        <div class="lana_del_rey float-left text-align-center">
         <img src="img/youg.jpeg" alt="lanadelrey">
         <h3>Lana Del Rey</h3>
@@ -173,8 +177,8 @@
         <li>Sinister</li><br>
         <li id="brano" >Brano Nome</li>
        </ul>
-       <span><i class="far fa-heart"></i></span>
-       <span><i class="far fa-folder"></i></span>
+      <span><i class="far fa-heart"></i></span>
+      <span><i class="far fa-folder"></i></span>
      </div>
      <div class="central_footer display_flex">
       <div class="icons text-align">
@@ -185,23 +189,22 @@
         <li><i class="fas fa-step-forward"></i></li>
         <li><i class="fas fa-redo-alt"></i></li>
        </ul>
-       </div>
-        <div class="player display_flex">
-         <div class="number">0.25</div>
-         <div class="central_bar"> </div>
-         <div class="number">4.25</div>
-        </div>
-       </div>
-      <div class="right_footer display_flex">
-       <ul class="menu_list no_gutter_padding display_flex">
-        <li><i class="fas fa-bars"></i></li>
-        <li><i class="fas fa-tv"></i></li>
-        <li><i class="fas fa-volume-up"></i></li>
-       </ul>
-       <div class="right_bar"> </div>
+      </div>
+      <div class="player display_flex">
+       <div class="number">0.25</div>
+       <div class="central_bar"> </div>
+       <div class="number">4.25</div>
       </div>
      </div>
-    </section>
+     <div class="right_footer display_flex">
+      <ul class="menu_list no_gutter_padding display_flex">
+       <li><i class="fas fa-bars"></i></li>
+       <li><i class="fas fa-tv"></i></li>
+       <li><i class="fas fa-volume-up"></i></li>
+      </ul>
+      <div class="right_bar"> </div>
+     </div>
+    </div>
    </footer>
    <!-- fine footer -->
   </body>
