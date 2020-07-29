@@ -710,6 +710,10 @@ margin: 0;
   main .menu_service_list {
     flex-wrap: wrap;
   }
+
+  .film_cover {
+    width: calc(100% / 4);
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width:1200px) {
@@ -718,12 +722,20 @@ margin: 0;
   main .menu_service_list {
     flex-wrap: wrap;
   }
+
+  .film_cover {
+    width: calc(100% / 4);
+  }
 }
 
 @media screen and (min-width: 260px) and (max-width:768px) {
 
   main .menu_service_list {
     flex-wrap: wrap;
+  }
+
+  .film_cover {
+    width: calc(100% / 2);
   }
 
 }
