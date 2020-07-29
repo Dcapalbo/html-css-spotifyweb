@@ -294,33 +294,39 @@ li:hover .home_logo {
   color: #fff;
   opacity: 1.0;
   border-left: 3px solid yellow;
+  cursor: pointer;
 }
 
 li:hover .search_logo {
   color: #fff;
   opacity: 1.0;
   border-left: 3px solid yellow;
+  cursor: pointer;
 }
 
 li:hover .libreria_logo {
   color: #fff;
   opacity: 1.0;
   border-left: 3px solid yellow;
+  cursor: pointer;
 }
 
 li:hover .home_a {
   color: #fff;
   opacity: 1.0;
+  cursor: pointer;
 }
 
 li:hover .search_a {
   color: #fff;
   opacity: 1.0;
+  cursor: pointer;
 }
 
 li:hover .libreria_a {
   color: #fff;
   opacity: 1.0;
+  cursor: pointer;
 }
 
 .first_side_menu a {
@@ -545,7 +551,6 @@ li:hover .libreria_a {
 
 .container_flex {
   align-items: center;
-  justify-content:
 }
 
 /* left footer */
@@ -566,7 +571,6 @@ margin: 0;
 
 .left_footer {
   width: 25%;
-  justify-content: center;
   align-items: center;
 }
 
@@ -623,11 +627,37 @@ margin: 0;
 }
 
 .central_bar {
+  position: relative;
   width: 80%;
   height: 4px;
   border-radius: 6px;
   background-color: #fff;
   opacity: 0.8;
+}
+
+.central_yellow_bar {
+  position: absolute;
+  left: 0px;
+  width: 30%;
+  height: 4px;
+  border-radius: 6px;
+  background-color: yellow;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-circle {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  cursor: pointer;
+  transform: translate(0%, -30%);
+  color: #fff;
+}
+
+.central_bar:hover .central_yellow_bar {
+  cursor: pointer;
+  display: block;
 }
 
 .number, .central_bar {
@@ -655,6 +685,7 @@ margin: 0;
 }
 
 .right_bar {
+  position: relative;
   display: inline-block;
   margin: 0px 10px;
   width: 50%;
@@ -662,6 +693,31 @@ margin: 0;
   border-radius: 6px;
   background-color: #fff;
   opacity: 0.8;
+}
+
+.right_yellow_bar {
+  position: absolute;
+  left: 0px;
+  width: 30%;
+  height: 4px;
+  border-radius: 6px;
+  background-color: yellow;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-circle {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  cursor: pointer;
+  transform: translate(0%, -30%);
+  color: #fff;
+}
+
+.right_bar:hover .right_yellow_bar {
+  cursor: pointer;
+  display: block;
 }
 
 /* media  query */
@@ -736,6 +792,3 @@ margin: 0;
 
   .film_cover {
     width: calc(100% / 2);
-  }
-
-}
