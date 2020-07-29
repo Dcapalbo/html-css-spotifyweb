@@ -440,15 +440,23 @@ li:hover .libreria_a {
   color: #fff;
   opacity: 0.5;
   display: inline;
-  padding: 0px 15px;
+  padding: 5px 15px;
 }
 
-.border_yellow {
-  border-bottom: 2px solid yellow;
-  height: 10px;
-  border-radius: 3px;
-  width: 100px;
-  display: none;
+.evidenza {
+  position: relative;
+}
+
+.evidenza::after {
+  content:'';
+  position:absolute;
+  width:50px;
+  height:4px;
+  background:yellow;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
 .Service_list:hover .border_yellow {
@@ -537,7 +545,7 @@ li:hover .libreria_a {
 
 .container_flex {
   align-items: center;
-  justify-content: space-around;
+  justify-content:
 }
 
 /* left footer */
@@ -717,4 +725,5 @@ margin: 0;
   main .menu_service_list {
     flex-wrap: wrap;
   }
+
 }
