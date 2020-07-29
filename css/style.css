@@ -534,6 +534,10 @@ li:hover .libreria_a {
   padding: 20px;
 }
 
+.left_footer {
+  width: 25%;
+}
+
 .text_left_footer li {
   display:inline;
   list-style: none;
@@ -558,6 +562,10 @@ li:hover .libreria_a {
 
 /* central footer */
 
+.central_footer {
+  width: 40%;
+}
+
 .central_footer .menu_list li {
   list-style: none;
   display: inline;
@@ -581,6 +589,10 @@ li:hover .libreria_a {
 }
 
 /* right footer */
+
+.right_footer {
+  width: 25%;
+}
 
 .right_footer .menu_list li {
   list-style: none;
