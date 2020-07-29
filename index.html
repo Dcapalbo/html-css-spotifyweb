@@ -11,7 +11,7 @@
     <title>Spotifyweb</title>
   </head>
   <!-- inizio body -->
-  <body class="page_wrapper">
+  <body>
   <!-- inizio header  -->
    <header>
     <div class="header_top">
@@ -29,15 +29,9 @@
    <main>
     <!-- inizio aside -->
     <aside>
-     <div class="row">
-      <div class="col-sm-12 hidden-xs text-align-left">
-       <img class="logo" src="img/logo.svg" alt="Logo Spotify">
-      </div>
-      <img class="logo_hidden hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
-     </div>
-     <div class="row">
-      <div class="col-sm-10 hidden-xs">
-       <div class="first_side_menu">
+     <img class="logo" src="img/logo.svg" alt="Logo Spotify">
+     <img class="logo_hidden hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
+      <div class="first_side_menu">
         <ul class="menu_list no_gutter_margin no_gutter_padding">
          <li><img class="logo home_logo" src="img/home.svg" alt=""><a class="home_a"  href="#">home</a></li>
          <li><img class="logo search_logo" src="img/search.svg" alt=""><a class="search_a" href="#">cerca</a></li>
@@ -60,21 +54,19 @@
           <li>Nome Playlist</li>
         </ul>
        </div>
-       <div class="Download_app text-align-left padding_bottom10 margin_left20">
+       <div class="download_app text-align-left padding_bottom10 margin_left20">
         <img src="img/download.svg" alt="download">
         <span>Installa app</span>
        </div>
-       <div class="Profile text-align-left padding_top10 margin_left20">
+       <div class="profile text-align-left padding_top10 margin_left20">
         <i class="far fa-user-circle"></i>
         <span>John Dee</span>
        </div>
-      </div>
-     </div>
     </aside>
     <!-- fine aside -->
     <!-- inizio main -->
     <section class="central_main">
-     <div class="Service_list text-align-center">
+     <div class="service_list text-align-center">
       <ul class="menu_service_list">
        <li class="border_yellow">In evidenza</li>
        <li>Podcast</li>
@@ -174,41 +166,39 @@
    <!-- fine main -->
    <!-- inizio footer -->
    <footer>
-    <section>
-     <div class="container_flex display_flex">
-      <div class="left_footer display_flex">
-       <img id="small_sinister" src="img/sinister.jpeg" alt="sinister">
+    <div class="container_flex display_flex">
+     <div class="left_footer display_flex">
+      <img id="small_sinister" src="img/sinister.jpeg" alt="sinister">
        <ul class="text_left_footer">
         <li>Sinister</li><br>
-        <li>Brano Nome</li>
+        <li id="brano" >Brano Nome</li>
        </ul>
        <span><i class="far fa-heart"></i></span>
        <span><i class="far fa-folder"></i></span>
-      </div>
-      <div class="central_footer display_flex">
-       <div class="icons text-align">
-        <ul class="menu_list no_gutter_padding">
-         <li><i class="fas fa-random"></i></li>
-         <li><i class="fas fa-step-backward"></i></li>
-         <li><i id="play_circle" class="far fa-play-circle"></i></li>
-         <li><i class="fas fa-step-forward"></i></li>
-         <li><i class="fas fa-redo-alt"></i></li>
-        </ul>
+     </div>
+     <div class="central_footer display_flex">
+      <div class="icons text-align">
+       <ul class="menu_list no_gutter_padding">
+        <li><i class="fas fa-random"></i></li>
+        <li><i class="fas fa-step-backward"></i></li>
+        <li><i id="play_circle" class="far fa-play-circle"></i></li>
+        <li><i class="fas fa-step-forward"></i></li>
+        <li><i class="fas fa-redo-alt"></i></li>
+       </ul>
        </div>
         <div class="player display_flex">
          <div class="number">0.25</div>
          <div class="central_bar"> </div>
          <div class="number">4.25</div>
         </div>
-
-      </div>
+       </div>
       <div class="right_footer display_flex">
        <ul class="menu_list no_gutter_padding display_flex">
         <li><i class="fas fa-bars"></i></li>
         <li><i class="fas fa-tv"></i></li>
         <li><i class="fas fa-volume-up"></i></li>
        </ul>
-      <div class="right_bar"> </div>
+       <div class="right_bar"> </div>
       </div>
      </div>
     </section>

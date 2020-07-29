@@ -158,7 +158,8 @@
 
  .page_wrapper {
   display: flex;
-  height: 100vh;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
  }
 
  body {
@@ -167,6 +168,7 @@
 
  main {
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   width: 100%;
   height: calc(100% - 80px);
@@ -184,10 +186,10 @@
  }
 
  aside {
-  overflow-y: scroll;
-  height: 100vh;
+  height: calc(100vh - 100px);
   width: 300px;
   background-color:#000;
+  overflow-y: hidden;
  }
 
  p {
@@ -220,7 +222,7 @@
   top: 0px;
   right: 0px;
   z-index: 1;
-  width: calc(100% - 216px);
+  width: calc(100% - 300px);
   opacity: 0.8;
   height: 80px;
   background-color: #080B12;
@@ -250,7 +252,7 @@
 /* logo */
 
 aside .logo {
-  width: 180px;
+  width: 80%;
   margin-top: 12px;
   margin-left: 20px;
 }
@@ -269,7 +271,7 @@ aside .logo {
 }
 
 aside ul .logo {
-  width: 60px;
+  width: 20%;
   padding-left: 20px;
   margin: 0px;
   padding-top: 10px;
@@ -334,7 +336,7 @@ li:hover .libreria_a {
 .square_grey {
   position: relative;
   min-width: 60px;
-  min-height:60px;
+  min-height: 60px;
   background-color: #A9A9A9;
   margin-bottom: 20px;
 }
@@ -375,23 +377,23 @@ li:hover .libreria_a {
 
 /* download and profile */
 
-.Download_app {
-  margin-top: 250px;
+.download_app {
+  margin-top: 60px;
   border-bottom: 1px solid #A9A9A9;
 }
 
-.Download_app img {
+.download_app img {
   width: 35px;
   opacity: 0.5;
   padding-right: 10px;
 }
 
-.Profile .fa-user-circle{
+.profile .fa-user-circle{
   font-size: 25px;
   padding-right: 10px;
 }
 
-.Profile span {
+.profile span {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -403,7 +405,14 @@ li:hover .libreria_a {
 /* start main */
 
 /* service list */
-.Service_list {
+
+.central_main {
+  height: calc(100vh - 100px);
+  width: calc(100% - 300px);
+  overflow-y: auto;
+}
+
+.service_list {
   justify-content: center;
 }
 
@@ -522,6 +531,14 @@ li:hover .libreria_a {
 
 /* left footer */
 
+footer ul {
+padding: 0;
+}
+
+footer ul {
+margin: 0;
+}
+
 #small_sinister {
   max-width: 100px;
   max-height: 100px;
@@ -540,12 +557,17 @@ li:hover .libreria_a {
   color: #fff;
 }
 
+#brano {
+  color: #fff;
+  opacity: 0.5;
+}
+
 .text_left_footer ul {
   padding-top: 20px;
 }
 
 .left_footer span {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 15px;
   color: #fff;
   opacity:0.5;
@@ -623,12 +645,5 @@ li:hover .libreria_a {
   background-color: #fff;
   opacity: 0.8;
 }
-
-
-
-
-
-
-
 
 /* media  query */
