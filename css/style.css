@@ -524,7 +524,7 @@ li:hover .libreria_a {
 
 .container_flex {
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* left footer */
@@ -567,8 +567,13 @@ li:hover .libreria_a {
 
 .central_footer {
   width: 50%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.menu_list {
+  margin: auto;
 }
 
 .central_footer .menu_list li {
