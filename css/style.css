@@ -161,10 +161,6 @@
   height: 100vh;
  }
 
-.main_wrapper {
-  width: 90%;
-  height: calc(100% - 80px);
-}
  body {
    font-family: Montserrat;
  }
@@ -180,7 +176,7 @@
  footer {
   float: left;
   width: 100%;
-  height: 80px;
+  height: 350px;
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -190,7 +186,7 @@
 
  aside {
   overflow-y: scroll;
-  height: 180vh;
+  height: 100vh;
   width: 300px;
   background-color:#000;
  }
@@ -208,11 +204,14 @@
  }
 
  h3 {
-
    text-transform: capitalize;
    color:#fff;
    font-weight: bold;
    font-size: 20px;
+ }
+
+ h4 {
+   color:#fff;
  }
 
 /* Header */
@@ -445,7 +444,6 @@ li:hover .libreria_a {
 }
 
 .film_cover img {
-  position: relative;
   width: 100%;
 }
 
@@ -456,25 +454,25 @@ li:hover .libreria_a {
 
 .film_cover .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 5%;
+    left: 7%;
+    width: 245px;
+    height: 245px;
     display: none;
-    color: #FFF;
+    color: #fff;
 }
 
 .film_cover:hover .overlay {
   background-color: #000;
   opacity: 0.7;
-  transition: 1.5s;
+  transition: 0.5s;
   display: block;
 }
 
 .fa-play-circle {
   font-size: 60px;
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
@@ -483,7 +481,7 @@ li:hover .libreria_a {
 .film_cover:hover .fa-play-circle {
   color: #fff;
   opacity: 0.7;
-  transition: 1.5s;
+  transition: 0.5s;
   display: block;
 }
 
@@ -509,3 +507,98 @@ li:hover .libreria_a {
 .popolar_artist h3,p {
   margin-left: 30px;
 }
+
+/* termine main */
+
+/* inizio footer */
+
+
+#small_sinister {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 20px;
+}
+
+.left_footer {
+  justify-content: flex-start;
+}
+
+.text_left_footer li {
+  margin: 0px;
+  display:block;
+  margin-top: 40px;
+  list-style: none;
+  color: #fff;
+}
+
+.left_footer span {
+  margin-top: 40px;
+  margin-left: 15px;
+  color: #fff;
+  opacity:0.5;
+}
+
+.music_player {
+  width: calc((100% / 3) - 15px);
+  text-align: center;
+}
+
+.central_footer .menu_list li {
+  list-style: none;
+  display: inline;
+}
+
+footer, .player, .icons {
+  width: 100%;
+}
+
+.central_bar {
+  width: 80%;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.number, .central_bar {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.number {
+  color: #fff;
+}
+
+.central_footer {
+  justify-content: center;
+}
+
+
+.right_footer {
+  justify-content: flex-end;
+}
+.right_footer .menu_list li {
+  list-style: none;
+  display: inline;
+  padding: 0px 10px;
+  vertical-align: middle;
+}
+
+.right_bar {
+  display: inline-block;
+  margin: 0px 10px;
+  width: 10%;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+/* media  query */
