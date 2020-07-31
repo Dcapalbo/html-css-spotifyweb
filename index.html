@@ -32,26 +32,26 @@
      <img class="logo" src="img/logo.svg" alt="Logo Spotify">
      <img class="logo_nascosto hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
       <div class="first_side_menu">
-        <ul class="menu_list no_gutter_margin no_gutter_padding">
-         <li><img class="logo home_logo" src="img/home.svg" alt=""><a class="home_a"  href="#">home</a></li>
-         <li><img class="logo search_logo" src="img/search.svg" alt=""><a class="search_a" href="#">cerca</a></li>
-         <li><img class="logo libreria_logo" src="img/libreria.svg" alt="libreria"><a class="libreria_a" href="#">libreria</a></li>
-        </ul>
+       <ul class="menu_list no_gutter_margin no_gutter_padding">
+        <li><img class="home_logo visible-xs" src="img/home.svg" alt=""><a class=""  href="#">Home</a></li>
+        <li><img class="search_logo visible-xs" src="img/search.svg" alt=""><a class="" href="#">Cerca</a></li>
+        <li><img class="libreria_logo visible-xs" src="img/libreria.svg" alt="libreria"><a class="" href="#">La mia libreria</a></li>
+       </ul>
+      </div>
+      <div class="second_side_menu margin_left20 hidden-xs">
+       <h2>Playlist</h2>
+       <div class="square_grey display_inline_block hidden-xs">
+        <i class="fas fa-plus"></i>
        </div>
-       <div class="second_side_menu margin_left20 hidden-xs">
-        <h2>Playlist</h2>
-        <div class="square_grey display_inline_block hidden-xs">
-         <i class="fas fa-plus"></i>
-        </div>
-        <span class="no_gutter_margin hidden-xs">Crea Playlist</span>
+       <span class="no_gutter_margin hidden-xs">Crea Playlist</span>
         <ul class="menu_list no_gutter_margin no_gutter_padding hidden-xs">
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
+         <li>Nome Playlist</li>
         </ul>
        </div>
        <div class="download_app text-align-left padding_bottom10 margin_left20 margin_right20 hidden-xs">
@@ -84,84 +84,132 @@
      <h2 class="margin_top">Recently Played</h2>
      <div class="products margin_top35 display_flex">
       <div class="film_cover text-align-center">
-       <img src="img/metal_lifting.jpg" alt="heavy metal">
-       <div class="overlay">
-        <i class="far fa-play-circle"></i>
-       </div>
-       <h3>Heavy Metal</h3>
-       <p>Subtitle</p>
-      </div>
-      <div class="film_cover text-align-center">
-       <img src="img/stranger.jpeg" alt="strangethings">
+       <div class="cover_overlay display_flex">
+        <img src="img/metal_lifting.jpg" alt="heavy metal">
         <div class="overlay">
          <i class="far fa-play-circle"></i>
         </div>
-       <h3>Stranger Things, Vol. 1 (a Netflix Origina  Series Soundtrack)</h3>
-       <p>Kyle Dixon & Michael Stein</p>
+       </div>
+       <div class="film_cover_text">
+        <h3>Heavy Metal</h3>
+        <p>Subtitle</p>
+       </div>
       </div>
       <div class="film_cover text-align-center">
-       <img src="img/aquietplace.jpeg" alt="quietplace">
-       <div class="overlay">
-        <i class="far fa-play-circle"></i>
+       <div class="cover_overlay display_flex">
+        <img src="img/stranger.jpeg" alt="strangethings">
+        <div class="overlay">
+         <i class="far fa-play-circle"></i>
+        </div>
        </div>
-       <h3>A Quiet Place</h3>
-       <p>Subtitle</p>
+       <div class="film_cover_text">
+        <h3>Stranger Things, Vol. 1 (a Netflix Origina  Series Soundtrack)</h3>
+        <p>Kyle Dixon & Michael Stein</p>
+       </div>
       </div>
       <div class="film_cover text-align-center">
-       <img src="img/split.jpeg" alt="split">
-       <div class="overlay">
-        <i class="far fa-play-circle"></i>
+       <div class="cover_overlay display_flex">
+        <img src="img/aquietplace.jpeg" alt="quietplace">
+        <div class="overlay">
+         <i class="far fa-play-circle"></i>
+        </div>
        </div>
-       <h3>Split</h3>
-       <p>Subtitle</p>
+       <div class="film_cover_text">
+        <h3>A Quiet Place</h3>
+        <p>Subtitle</p>
+       </div>
       </div>
       <div class="film_cover text-align-center">
-       <img src="img/cure.jpeg" alt="cure">
-       <div class="overlay">
-        <i class="far fa-play-circle"></i>
+       <div class="cover_overlay display_flex">
+        <img src="img/split.jpeg" alt="split">
+        <div class="overlay">
+         <i class="far fa-play-circle"></i>
+        </div>
        </div>
-       <h3>A Cure For Wellness</h3>
-       <p>Subtitle</p>
+       <div class="film_cover_text">
+        <h3>Split</h3>
+        <p>Subtitle</p>
+       </div>
       </div>
       <div class="film_cover text-align-center">
-       <img src="img/sinister.jpeg" alt="sinister">
-       <div class="overlay">
-        <i class="far fa-play-circle"></i>
+       <div class="cover_overlay display_flex">
+        <img src="img/cure.jpeg" alt="cure">
+        <div class="overlay">
+         <i class="far fa-play-circle"></i>
+        </div>
        </div>
-       <h3>Sinister</h3>
-       <p>Subtitle</p>
+       <div class="film_cover_text">
+        <h3>A Cure For Wellness</h3>
+        <p>Subtitle</p>
+       </div>
+      </div>
+      <div class="film_cover text-align-center">
+       <div class="cover_overlay display_flex">
+        <img src="img/sinister.jpeg" alt="sinister">
+        <div class="overlay">
+         <i class="far fa-play-circle"></i>
+        </div>
+       </div>
+       <div class="film_cover_text">
+        <h3>Sinister</h3>
+        <p>Subtitle</p>
+       </div>
       </div>
      </div>
      <!-- end film cover -->
      <!-- playlists -->
-     <div class="row">
-      <div class="playlist_Capalbo_Domenico">
-       <h3 class="margin_top">Creato per Domenico Capalbo</h3>
-       <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-      <div class="mix float-left text-align-center col-xs-6 col-sm-4 col-md-4 col-lg-3">
+     <div class="text_playlist margin_top35 margin_bottom35">
+      <h3 >Creato per Domenico Capalbo</h3>
+      <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+    </div>
+    <div class="playlist_Capalbo_Domenico display_flex">
+     <div class="mix_cover text-align-center">
+      <div class="cover_overlay display_flex">
        <img src="img/radar.jpeg" alt="radar">
-       <h3>Release Radar</h3>
+       <div class="overlay">
+        <i class="far fa-play-circle"></i>
+       </div>
       </div>
-      <div class="mix float-left text-align-center display_block col-xs-6 col-sm-4 col-md-4 col-lg-3">
+      <h3>Release Radar</h3>
+     </div>
+     <div class="mix_cover text-align-center margin_left20">
+      <div class="cover_overlay display_flex">
        <img src="img/mixdaily.jpeg" alt="dailymix">
-       <h3>Daily mix</h3>
+       <div class="overlay">
+        <i class="far fa-play-circle"></i>
+       </div>
       </div>
+      <h3>Daily mix</h3>
      </div>
-     </div>
+    </div>
      <!-- end playlists -->
      <!-- popolar artists -->
-     <div class="row margin_bottom">
-      <div class="popolar_artist">
-       <h3 class="margin_top">Artisti più popolari</h3>
-       <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-       <div class="lana_del_rey float-left text-align-center col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <img src="img/youg.jpeg" alt="lanadelrey">
-        <h3>Lana Del Rey</h3>
+     <div class="text_popolar_artist margin_top35 margin_bottom35">
+      <h3 class="margin_top">Artisti più popolari</h3>
+      <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+     </div>
+     <div class="popolar_artist display_flex text-align-center">
+      <div class="artist_cover">
+       <div class="cover_overlay display_flex">
+        <div class="lana_del_rey">
+         <img src="img/youg.jpeg" alt="lanadelrey">
+         <div class="overlay">
+          <i class="far fa-play-circle"></i>
+         </div>
+        </div>
        </div>
-       <div class="ludovico float-left text-align-center col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <img src="img/einaudi.jpeg" alt="ludovico einaudi">
-        <h3>Ludovico Einaudi</h3>
+       <h3>Lana Del Rey</h3>
+      </div>
+      <div class="artist_cover">
+       <div class="cover_overlay display_flex">
+        <div class="ludovico">
+         <img src="img/einaudi.jpeg" alt="ludovico einaudi">
+          <div class="overlay">
+           <i class="far fa-play-circle"></i>
+          </div>
+        </div>
        </div>
+       <h3>Ludovico Einaudi</h3>
       </div>
      </div>
      <!-- end popolar artists -->
@@ -174,7 +222,7 @@
      <div class="left_footer display_flex">
       <img id="small_sinister" src="img/sinister.jpeg" alt="sinister">
        <ul class="text_left_footer">
-        <li>Sinister</li><br>
+        <li>Sinister</li>
         <li id="brano">Brano Nome</li>
        </ul>
       <span><i class="far fa-heart"></i></span>
@@ -206,7 +254,6 @@
       </ul>
       <div class="right_bar"><div class="right_yellow_bar"><i class="fas fa-circle"></i></div>
       </div>
-     </div>
      </div>
     </div>
    </footer>

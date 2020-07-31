@@ -172,7 +172,7 @@
 
  main {
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: auto;
   display: flex;
   width: 100%;
   height: calc(100% - 100px);
@@ -274,7 +274,25 @@ aside .logo {
   width: 50%;
 }
 
-.menu_list {
+.first_side_menu a {
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.first_side_menu ul {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 0px;
+  padding-top: 10px;
+}
+
+.first_side_menu {
   list-style:none;
   display: block;
   color: #fff;
@@ -329,27 +347,40 @@ li:hover .libreria_a {
   cursor: pointer;
 }
 
-.first_side_menu a {
-  position: absolute;
-  margin-top: 20px;
-  padding-left: 10px;
-  font-size: 15px;
-  text-decoration: none;
-  color: #fff;
-  opacity: 0.5;
-  text-transform: capitalize;
-}
-
-.first_side_menu ul {
-  position: relative;
-  margin-top: 30px;
-  margin-left: 0px;
-  padding-top: 10px;
-}
-
 /* end first menu */
 
 /* second menu */
+
+.second_side_menu {
+  padding-top: 30px;
+  overflow-y: hidden;
+}
+
+.second_side_menu h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.second_side_menu li {
+  color: #fff;
+  line-height: 30px;
+  opacity: 0.5;
+}
+
+.second_side_menu span {
+  position: absolute;
+  margin-top: 20px;
+  color: #fff;
+  padding-left: 15px;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.second_side_menu .menu_list {
+  overflow-y: auto;
+}
+
 .square_grey {
   position: relative;
   min-width: 60px;
@@ -366,31 +397,6 @@ li:hover .libreria_a {
   font-size: 30px;
 }
 
-.second_side_menu h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.second_side_menu {
-  padding-top: 30px;
-  overflow-y: auto;
-}
-.second_side_menu li {
-  color: #fff;
-  line-height: 30px;
-  opacity: 0.5;
-}
-
-.second_side_menu span {
-  overflow-y: auto;
-  position: absolute;
-  margin-top: 20px;
-  color: #fff;
-  padding-left: 15px;
-  font-size: 15px;
-  opacity: 0.5;
-}
 /* end menu */
 
 /* download and profile */
@@ -442,6 +448,8 @@ li:hover .libreria_a {
 }
 
 .menu_service_list li {
+  width: calc(100% / 6);
+  flex-wrap: wrap;
   text-align: center;
   color: #fff;
   opacity: 0.5;
@@ -478,15 +486,6 @@ li:hover .libreria_a {
   font-size: 30px;
 }
 
-.film_cover {
-  position: relative;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: calc(100% / 6);
-  flex-shrink: 0;
-  padding: 20px;
-}
-
 .film_cover img {
   width: 100%;
 }
@@ -495,55 +494,125 @@ li:hover .libreria_a {
   margin: 0px;
 }
 /* overlay */
+/* filmcover */
+
+.film_cover {
+  flex-shrink: 1;
+  position: relative;
+  width: calc(100% / 6);
+  padding: 20px;
+}
 
 .film_cover .overlay {
     position: absolute;
-    top: 5%;
-    left: 7%;
-    width: 86%;
-    height: 60%;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     display: none;
     color: #fff;
 }
 
 .film_cover:hover .overlay {
   background-color: #000;
-  opacity: 0.7;
-  transition: 0.5s;
+  opacity: 0.6;
   display: block;
+  transition: 3s;
 }
 
 .fa-play-circle {
-  font-size: 60px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  top:50%;
+  left:50%;
+  font-size: 50px;
+  transform: translate(-50%,-50%);
 }
 
-/* overlay */
+.cover_overlay {
+  position: relative;
+  width: 100%;
+}
 
-.playlist_Capalbo_Domenico h3,p {
+/* filmcover */
+
+/* mixcover */
+
+.mix_cover .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #fff;
+}
+
+.mix_cover .cover_overlay {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.mix_cover:hover .overlay {
+  background-color: #000;
+  opacity: 0.6;
+  display: block;
+  transition: 3s;
+}
+
+.mix_cover {
+  position: relative;
+}
+
+.mix_cover img {
+  width: 100%
+}
+
+.text_playlist {
   margin-left: 30px;
 }
 
-.mix img {
-  width: 100%;
-  padding: 20px;
-  margin-left: 15px;
-}
+/* mixcover */
+
+/* popolarartist */
 
 .popolar_artist img {
   width: 100%;
-  padding: 30px;
-  margin-left: 15px;
   border-radius: 50%;
 }
 
-.popolar_artist h3,p {
+.artist_cover .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #fff;
+}
+
+.text_popolar_artist {
   margin-left: 30px;
 }
+
+.artist_cover {
+  position: relative;
+  margin-left: 20px;
+}
+
+.artist_cover .cover_overlay {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.artist_cover:hover .overlay {
+  background-color: #000;
+  opacity: 0.6;
+  display: block;
+  transition: 3s;
+  border-radius: 50%;
+}
+/* popolarartisti */
+/* overlay */
 
 /* termine main */
 
@@ -613,6 +682,7 @@ margin: 0;
 .central_footer .menu_list li {
   list-style: none;
   display: inline;
+  color: #fff;
   padding: 0px 20px;
 }
 
@@ -680,6 +750,7 @@ margin: 0;
 .right_footer .menu_list li {
   list-style: none;
   display: inline;
+  color: #fff;
   padding: 0px 10px;
   vertical-align: middle;
 }
@@ -722,6 +793,34 @@ margin: 0;
 
 /* media  query */
 
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+
+  main .menu_service_list {
+    flex-wrap: wrap;
+  }
+
+
+  .film_cover {
+    width: calc(100% / 4);
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  main .menu_service_list {
+    flex-wrap: wrap;
+  }
+
+  .film_cover {
+    width: calc(100% / 2);
+    flex-wrap: wrap;
+  }
+
+}
+
+
 @media screen and (min-width: 0px) and (max-width:768px) {
 
   aside .logo {
@@ -761,34 +860,9 @@ margin: 0;
    width: calc(100% - 100px);
  }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+ .film_cover {
+   width: calc(100% / 2);
+   flex-wrap: wrap;
+ }
 
-  main .menu_service_list {
-    flex-wrap: wrap;
-  }
-
-  .film_cover {
-    width: calc(100% / 4);
-  }
 }
-
-@media screen and (min-width: 992px) and (max-width:1200px) {
-
-
-  main .menu_service_list {
-    flex-wrap: wrap;
-  }
-
-  .film_cover {
-    width: calc(100% / 4);
-  }
-}
-
-@media screen and (min-width: 260px) and (max-width:768px) {
-
-  main .menu_service_list {
-    flex-wrap: wrap;
-  }
-
-  .film_cover {
-    width: calc(100% / 2);
