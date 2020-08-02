@@ -18,7 +18,6 @@
     <div class="header_top">
      <div class="row no_gutter_margin">
        <div class="col-xs-2 col-sm-3 col-md-3 col-lg-4 float-left text-align-left">
-         <h1 id="h1"></h1>
        </div>
       <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 float-right text-align-right">
        <!-- button header -->
@@ -37,9 +36,9 @@
      <img class="logo_nascosto hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
       <div class="first_side_menu">
        <ul class="menu_list no_gutter_margin no_gutter_padding">
-        <li><img class="home_logo visible-xs" src="img/home.svg" alt=""><a class=""  href="#">Home</a></li>
-        <li><img class="search_logo visible-xs" src="img/search.svg" alt=""><a class="" href="#">Cerca</a></li>
-        <li><img class="libreria_logo visible-xs" src="img/libreria.svg" alt="libreria"><a class="" href="#">La mia libreria</a></li>
+        <li><img class="home_logo visible-xs visible-sm visible-md visible-lg" src="img/home.svg" alt="Home"><a class="search_a" href="#">Home</a></li>
+        <li><img class="search_logo visible-xs visible-sm visible-md visible-lg" src="img/search.svg" alt="Search"><a class="search_a" href="#">Cerca</a></li>
+        <li><img class="libreria_logo visible-xs visible-sm visible-md visible-lg" src="img/libreria.svg" alt="Libreria"><a class="libreria_a" href="#">La mia libreria</a></li>
        </ul>
       </div>
       <div class="second_side_menu margin_left20 hidden-xs">
@@ -59,16 +58,16 @@
         </ul>
        </div>
        <div class="download_app text-align-left padding_bottom10 margin_left20 margin_right20 hidden-xs">
-        <img class="hidden-xs" src="img/download.svg" alt="download">
+        <img src="img/download.svg" alt="download">
         <span class="hidden-xs">Installa app</span>
        </div>
        <div class="profile text-align-left padding_top10 margin_left20 hidden-xs">
         <i class="far fa-user-circle"></i>
         <span class="hidden-xs">Domenico Capalbo</span>
        </div>
-       <div class="profile_download_hidden visible-xs">
-        <img src="img/download.svg" alt="download">
-        <i class="far fa-user-circle text-align-center"></i>
+       <div class="profile_download display_flex visible-xs hidden-sm hidden-md hidden-lg">
+        <img id="responsive_download" src="img/download.svg" alt="download">
+        <i class="far fa-user-circle"></i>
        </div>
     </aside>
     <!-- fine aside -->
