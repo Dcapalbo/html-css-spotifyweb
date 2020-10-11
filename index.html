@@ -33,20 +33,22 @@
     <!-- inizio aside -->
     <aside>
      <img class="logo" src="img/logo.svg" alt="Logo Spotify">
-     <img class="logo_nascosto hidden-sm hidden-md hidden-lg visible-xs" src="img/favicon.ico" alt="logo_hidden">
+     <img class="logo_nascosto hidden-sm hidden-md hidden-lg visible-xs" src="img/logo_spotify.jpg" alt="logo_hidden">
       <div class="first_side_menu">
-       <ul class="menu_list no_gutter_margin no_gutter_padding">
-        <li><img class="home_logo visible-xs visible-sm visible-md visible-lg" src="img/home.svg" alt="Home"><a class="search_a" href="#">Home</a></li>
-        <li><img class="search_logo visible-xs visible-sm visible-md visible-lg" src="img/search.svg" alt="Search"><a class="search_a" href="#">Cerca</a></li>
-        <li><img class="libreria_logo visible-xs visible-sm visible-md visible-lg" src="img/libreria.svg" alt="Libreria"><a class="libreria_a" href="#">La mia libreria</a></li>
-       </ul>
+       <div class="menu_list no_gutter_margin no_gutter_padding">
+        <div><img class="home_logo visible-sm visible-md visible-lg" src="img/home.svg" alt="Home">
+        <a class="home_a" href="#">Home</a></div>
+        <div><img class="search_logo visible-sm visible-md visible-lg" src="img/search.svg" alt="Search">
+        <a class="search_a" href="#">Cerca</a></div>
+        <div><img class="libreria_logo visible-sm visible-md visible-lg" src="img/libreria.svg" alt="Libreria">
+        <a class="libreria_a" href="#">La mia libreria</a></div>
+       </div>
       </div>
       <div class="second_side_menu margin_left20 hidden-xs">
        <h2>Playlist</h2>
        <div class="square_grey display_inline_block hidden-xs">
         <i class="fas fa-plus"></i>
        </div>
-       <span class="no_gutter_margin hidden-xs">Crea Playlist</span>
         <ul class="menu_list no_gutter_margin no_gutter_padding hidden-xs">
          <li>Nome Playlist</li>
          <li>Nome Playlist</li>
@@ -65,7 +67,7 @@
         <i class="far fa-user-circle"></i>
         <span class="hidden-xs">Domenico Capalbo</span>
        </div>
-       <div class="profile_download display_flex visible-xs hidden-sm hidden-md hidden-lg">
+       <div class="profile_download visible-xs hidden-sm hidden-md hidden-lg">
         <img id="responsive_download" src="img/download.svg" alt="download">
         <i class="far fa-user-circle"></i>
        </div>
@@ -85,7 +87,7 @@
      </div>
      <!-- film cover -->
      <h2 class="margin_top">Recently Played</h2>
-     <div class="products margin_top35 display_flex">
+     <div class="products margin_top35">
       <div class="film_cover text-align-center">
        <div class="cover_overlay display_flex">
         <img src="img/metal_lifting.jpg" alt="heavy metal">
@@ -222,18 +224,21 @@
    <!-- inizio footer -->
    <footer>
     <div class="container_flex display_flex">
+     <!-- inizio left footer -->
      <div class="left_footer display_flex">
       <img id="small_sinister" src="img/sinister.jpeg" alt="sinister">
        <ul class="text_left_footer">
-        <li>Sinister</li> <br>
+        <li>Sinister</li><br>
         <li id="brano">Brano Nome</li>
        </ul>
       <span><i class="far fa-heart"></i></span>
       <span><i class="far fa-folder"></i></span>
      </div>
+     <!-- fine footer sinistro -->
+     <!-- inizio footer centrale -->
      <div class="central_footer display_flex">
       <div class="icons text-align">
-       <ul class="menu_list no_gutter_padding">
+       <ul class="menu_list">
         <li><i class="fas fa-random"></i></li>
         <li><i class="fas fa-step-backward"></i></li>
         <li><i id="play_circle" class="far fa-play-circle"></i></li>
@@ -249,7 +254,9 @@
        <div class="number">4.25</div>
       </div>
      </div>
-     <div class="right_footer display_flex">
+     <!-- fine footer centrale -->
+     <!-- inizio footer destro -->
+     <div class="right_footer">
       <ul class="menu_list no_gutter_padding display_flex">
        <li><i class="fas fa-bars"></i></li>
        <li><i class="fas fa-tv"></i></li>
@@ -259,6 +266,7 @@
       </div>
      </div>
     </div>
+    <!-- fine footer destro -->
    </footer>
    <!-- fine footer -->
    <script src="js/script.js" charset="utf-8"></script>
